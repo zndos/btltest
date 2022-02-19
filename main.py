@@ -7,6 +7,10 @@ import os
 def hello():
     return "Hello World!"
 
+@route('/bye')
+def bye():
+    return "Bye World!"
+
 #когда вводим в адресную строку имя-домена/static/название-html-страницы.html
 #отрисовывает название-html-страницы.html
 @route('/static/<filename>')
