@@ -11,6 +11,9 @@ def hello():
 def bye():
     return "Bye World!"
 
+@route('/')
+def root():
+    return static_file('root.html', 'static/')
 #когда вводим в адресную строку имя-домена/static/название-html-страницы.html
 #отрисовывает название-html-страницы.html
 @route('/static/<filename>')
